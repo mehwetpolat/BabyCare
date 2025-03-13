@@ -7,5 +7,7 @@
         public string Age { get; set; }
         public string City { get; set; }
         public string ImageUrl { get; set; }
+        public int BranchId { get; set; }
+        public Branch Branch { get; set; }
     }
 }

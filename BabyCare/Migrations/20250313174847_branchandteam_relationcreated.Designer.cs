@@ -3,6 +3,7 @@ using BabyCare.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BabyCare.Migrations
 {
     [DbContext(typeof(BabyCareContext))]
-    partial class BabyCareContextModelSnapshot : ModelSnapshot
+    [Migration("20250313174847_branchandteam_relationcreated")]
+    partial class branchandteam_relationcreated
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
