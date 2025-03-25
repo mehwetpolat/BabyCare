@@ -1,0 +1,35 @@
+﻿@model List<BabyCare.Entities.Branch>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/AdminDefault/Index.cshtml";
+}
+
+<div class="card-header">
+    <div class="card-title">Branşlar Sayfası</div>
+</div>
+<div class="card-body">
+    <div class="card-sub">
+        Branşlar ile ilgili işlemleri buradan yapabilirsiniz.
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Branş Adı</th>
+                <th scope="col">Sil</th>
+                <th scope="col">Güncelle</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.BranchId</td>
+                    <td>@item.BranchName</td>
+                    <td>Sil</td>
+                    <td>Güncelle</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
