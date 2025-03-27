@@ -1,0 +1,14 @@
+﻿@model Branch
+@{
+    ViewData["Title"] = "CreateBranch";
+    Layout = "~/Areas/Admin/Views/AdminDefault/Index.cshtml";
+}
+
+<h1>Branş Ekleme Sayfası</h1>
+
+<form method="post">
+    <label>Branş Adı</label>
+    <input type="text" asp-for="BranchName" class="form-cotnrol" />
+    <br />
+    <button class="btn btn-primary">Ekle</button>
+</form>

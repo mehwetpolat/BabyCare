@@ -1,0 +1,44 @@
+﻿@model List<Team>
+@{
+    ViewData["Title"] = "TeamList";
+    Layout = "~/Areas/Admin/Views/AdminDefault/Index.cshtml";
+}
+
+<div class="card-header">
+    <div class="card-title">Ekibimiz</div>
+</div>
+<div class="card-body">
+    <div class="card-sub">
+        Ekibimiz ile ilgili işlemleri buradan yapabilirsiniz.
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Adı Soyad</th>
+                <th scope="col">Yaş</th>
+                <th scope="col">Şehir</th>
+                <th scope="col">Resim Yolu</th>
+                <th scope="col">Branşı</th>
+                <th scope="col">Sil</th>
+                <th scope="col">Güncelle</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.TeamId</td>
+                    <td>@item.NameSurname</td>
+                    <td>@item.Age</td>
+                    <td>@item.City</td>
+                    <td><img src="@item.ImageUrl" /></td>
+                    <td>@item.BranchId</td>
+                    <td><a href="/Admin/Team/DeleteTeam/@item.BranchId" class="btn btn-warning">Sil</a></td>
+                    <td><a href="/Admin/Team/UpdateTeam/@item.BranchId" class="btn btn-success">Güncelle</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a href="/Admin/Team/CreateTeam/" class="btn btn-outline-success">Takım Oluştur</a>
+</div>
