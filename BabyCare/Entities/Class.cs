@@ -10,5 +10,7 @@
         public int StudentCount { get; set; }
         public string LessonCount { get; set; }
         public string ClassTime { get; set; }
+        public int? TeamId { get; set; }
+        public Team Team { get; set; }
     }
 }

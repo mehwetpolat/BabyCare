@@ -4,7 +4,7 @@
 
 namespace BabyCare.Migrations
 {
-    public partial class branchandteam_relationcreated : Migration
+    public partial class new_relations : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,21 +12,37 @@ namespace BabyCare.Migrations
                 name: "BranchId",
                 table: "Teams",
                 type: "int",
-                nullable: false,
-                defaultValue: 0);
+                nullable: true);
+
+            migrationBuilder.AddColumn<int>(
+                name: "ClassId",
+                table: "Teams",
+                type: "int",
+                nullable: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Teams_BranchId",
                 table: "Teams",
                 column: "BranchId");
 
+            migrationBuilder.CreateIndex(
+                name: "IX_Teams_ClassId",
+                table: "Teams",
+                column: "ClassId");
+
             migrationBuilder.AddForeignKey(
                 name: "FK_Teams_Branches_BranchId",
                 table: "Teams",
                 column: "BranchId",
                 principalTable: "Branches",
-                principalColumn: "BranchId",
-                onDelete: ReferentialAction.Cascade);
+                principalColumn: "BranchId");
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_Teams_Classes_ClassId",
+                table: "Teams",
+                column: "ClassId",
+                principalTable: "Classes",
+                principalColumn: "ClassId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -35,12 +51,24 @@ namespace BabyCare.Migrations
                 name: "FK_Teams_Branches_BranchId",
                 table: "Teams");
 
+            migrationBuilder.DropForeignKey(
+                name: "FK_Teams_Classes_ClassId",
+                table: "Teams");
+
             migrationBuilder.DropIndex(
                 name: "IX_Teams_BranchId",
                 table: "Teams");
 
+            migrationBuilder.DropIndex(
+                name: "IX_Teams_ClassId",
+                table: "Teams");
+
             migrationBuilder.DropColumn(
                 name: "BranchId",
+                table: "Teams");
+
+            migrationBuilder.DropColumn(
+                name: "ClassId",
                 table: "Teams");
         }
     }

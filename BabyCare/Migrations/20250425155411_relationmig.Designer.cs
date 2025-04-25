@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BabyCare.Migrations
 {
     [DbContext(typeof(BabyCareContext))]
-    [Migration("20250313174847_branchandteam_relationcreated")]
-    partial class branchandteam_relationcreated
+    [Migration("20250425155411_relationmig")]
+    partial class relationmig
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -180,40 +180,20 @@ namespace BabyCare.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TeamId"), 1L, 1);
 
                     b.Property<string>("Age")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("BranchId")
-                        .HasColumnType("int");
-
                     b.Property<string>("City")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NameSurname")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("TeamId");
 
-                    b.HasIndex("BranchId");
-
                     b.ToTable("Teams");
-                });
-
-            modelBuilder.Entity("BabyCare.Entities.Team", b =>
-                {
-                    b.HasOne("BabyCare.Entities.Branch", "Branch")
-                        .WithMany()
-                        .HasForeignKey("BranchId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Branch");
                 });
 #pragma warning restore 612, 618
         }

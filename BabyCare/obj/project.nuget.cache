@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "rEJcTxKsSCAjAdg2rkqrbcqXKK8DjBI/2IDtphFk5J1Bso3Mlb2Jv32PYk2hiABlSvZFMJW6gY+6kFc7ozqDKQ==",
+  "dgSpecHash": "PLI9ucAeWw2+a0/+EM6uXYEMaG4zRDnWFwzTG2JAFI5LC228TzGR52bJY+8H/ClOUh+AlpOOWH+QLxH01GfwUQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\mehmet\\Desktop\\Projelerim\\BabyCare\\BabyCare\\BabyCare.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mehmet\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\mehmet\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\mehmet\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\mehmet\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\mehmet\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\mehmet\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",
