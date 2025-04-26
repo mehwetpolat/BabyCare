@@ -18,5 +18,8 @@ namespace BabyCare.Context
         public DbSet<AboutList> AboutLists { get; set; }
         public DbSet<Branch> Branches { get; set; }
         public DbSet<Team> Teams { get; set; }
+        public DbSet<SocialMedia> SocialMedias { get; set; }
+        public DbSet<Event> Events { get; set; }
+        public DbSet<Testimonial> Testimonials { get; set; }
     }
 }
