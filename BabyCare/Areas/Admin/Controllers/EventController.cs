@@ -22,8 +22,11 @@ namespace BabyCare.Areas.Admin.Controllers
         public IActionResult DeleteEvent(int id)
         {
             var value = _context.Events.Find(id);
-            _context.Remove(value);
-            _context.SaveChanges();
+            if (value != null)
+            {
+                _context.Events.Remove(value);
+                _context.SaveChanges();
+            }
             return RedirectToAction("EventList");
         }
 
@@ -32,6 +35,7 @@ namespace BabyCare.Areas.Admin.Controllers
         {
             return View();
         }
+        [HttpPost]
         public IActionResult CreateEvent(Event events)
         {
             _context.Events.Add(events);

@@ -1,0 +1,41 @@
+﻿@model Class
+@{
+    ViewData["Title"] = "UpdateClass";
+    Layout = "~/Areas/Admin/Views/AdminDefault/Index.cshtml";
+}
+
+<h1>Sınıf Güncelle</h1>
+
+<form method="post">
+    <label>Sınıf ID</label>
+    <input type="hidden" asp-for="ClassId" class="form-control" readonly />
+    <br />
+    <label>Başlık</label>
+    <br />
+    <input type="text" asp-for="ClassTitle" class="form-control" />
+    <br />
+    <label>Açıklama</label>
+    <input type="text" asp-for="ClassDescription" class="form-control" />
+    <br />
+    <label>Resim Yolu</label>
+    <input type="text" asp-for="ClassImageUrl" class="form-control" />
+    <br />
+    <label>Fiyat</label>
+    <input type="text" asp-for="Price" class="form-control" />
+    <br />
+    <label>Öğrenci Sayısı</label>
+    <input type="text" asp-for="StudentCount" class="form-control" />
+    <br />
+    <label>Sınıf Sayısı</label>
+    <input type="text" asp-for="LessonCount" class="form-control" />
+    <br />
+    <label>Saati</label>
+    <input type="text" asp-for="ClassTime" class="form-control" />
+    <br />
+    <label>Öğretmen</label>
+    <select asp-for="TeamId" asp-items="@ViewBag.v" class="form-control">
+        <option>Öğretmen Seçiniz</option>
+    </select>
+    <br />
+    <button class="btn btn-success">Kaydet</button>
+</form>

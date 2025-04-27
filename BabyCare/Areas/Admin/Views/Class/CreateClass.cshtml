@@ -1,0 +1,45 @@
+﻿@model Class
+@{
+    ViewData["Title"] = "CreateClass";
+    Layout = "~/Areas/Admin/Views/AdminDefault/Index.cshtml";
+}
+
+<h1>Sınıf Ekleme</h1>
+
+<form method="post">
+    <label>Sınıf Başlığı</label>
+    <input type="text" asp-for="ClassTitle" class="form-control" />
+    <span asp-validation-for="ClassTitle" class="text-danger"></span>
+    <br />
+    <label>Açıklama</label>
+    <input type="text" asp-for="ClassDescription" class="form-control" />
+    <span asp-validation-for="ClassDescription" class="text-danger"></span>
+    <br />
+    <label>Resim Yolu</label>
+    <input type="text" asp-for="ClassImageUrl" class="form-control" />
+    <span asp-validation-for="ClassImageUrl" class="text-danger"></span>
+    <br />
+    <label>Fiyatı</label>
+    <input type="number" asp-for="Price" class="form-control" />
+    <span asp-validation-for="Price" class="text-danger"></span>
+    <br />
+    <label>Öğrenci Sayısı</label>
+    <input type="number" asp-for="StudentCount" class="form-control" />
+    <span asp-validation-for="StudentCount" class="text-danger"></span>
+    <br />
+    <label>Sınıf Sayısı</label>
+    <input type="text" asp-for="LessonCount" class="form-control" />
+    <span asp-validation-for="LessonCount" class="text-danger"></span>
+    <br />
+    <label>Ders Saati</label>
+    <input type="text" asp-for="ClassTime" class="form-control" />
+    <span asp-validation-for="ClassTime" class="text-danger"></span>
+    <br />
+    <label>Öğretmen</label>
+    <select asp-for="TeamId" asp-items="@ViewBag.v" class="form-control">
+        <option >Öğretmen Seçiniz</option>
+    </select>
+    <span asp-validation-for="TeamId" class="text-danger"></span>
+    <br />
+    <button class="btn btn-primary">Kaydet</button>
+</form>

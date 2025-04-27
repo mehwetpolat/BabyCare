@@ -15,7 +15,13 @@ namespace BabyCare.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.ogrenciSayisi = _context.Classes.Sum(x => x.StudentCount);
+            ViewBag.mesajSayisi = _context.Contacts.Count();
+            ViewBag.referansSayisi = _context.Testimonials.Count();
             ViewBag.personelSayisi = _context.Teams.Count();
+
+
+
             return View();
         }
     }
