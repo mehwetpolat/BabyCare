@@ -1,0 +1,33 @@
+﻿@model List<Event>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card card-primary card-round">
+            <div class="card-header">
+                <div class="card-head-row">
+                    <div class="card-title">Mayıs Ayı Etkinlikleri</div>
+                </div>
+                <div class="card-category">Mayıs 01 - Haziran 01</div>
+            </div>
+            <div class="card-body pb-0">
+                @foreach (var item in Model)
+                {
+                    <div class="mb-4 mt-2">
+                        <h5>@item.EventName - @item.EventDate - @item.EventTime</h5>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="card card-round">
+            <div class="card-body pb-0">
+                <div class="h1 fw-bold float-end text-primary">+4%</div>
+                <h2 class="mb-2">14</h2>
+                <p class="text-muted">Yeni Öğrenciler</p>
+                <div class="pull-in sparkline-fix">
+                    <div id="lineChart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+﻿@model List<Testimonial>
+
+<div class="row">
+    @await Component.InvokeAsync("_AdminDashboardTeacherComponentPartial")
+    <div class="col-md-8">
+        <div class="card card-round">
+            <div class="card-header">
+                <div class="card-head-row card-tools-still-right">
+                    <div class="card-title">Referanslar</div>
+                    <div class="card-tools">
+                    </div>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <!-- Projects table -->
+                    <table class="table align-items-center mb-0">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">İsim Soyisim</th>
+                                <th scope="col" class="text-end">Mesleği</th>
+                                <th scope="col" class="text-end">Puanı</th>
+                                <th scope="col" class="text-end">Durumu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+
+                                    <th scope="row">
+                                        <button class="btn btn-icon btn-round btn-success btn-sm me-2">
+                                            <i class="fa fa-check"></i>
+                                        </button>
+                                        @item.NameSurname
+                                    </th>
+                                    <td class="text-end">@item.Status</td>
+                                    <td class="text-end">@item.Stars</td>
+                                    <td class="text-end">
+                                        <span class="badge badge-success">Bizi Önerdi</span>
+                                    </td>
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
