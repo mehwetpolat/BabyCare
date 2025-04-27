@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BabyCare")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a7852d1f524d9f89e1635b7906509f7a455e95e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec18ef4c70a787826fd9ad3c10d7f327fbc0c680")]
 [assembly: System.Reflection.AssemblyProductAttribute("BabyCare")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BabyCare")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

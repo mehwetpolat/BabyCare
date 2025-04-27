@@ -1,0 +1,37 @@
+﻿@model List<BabyCare.Entities.About>
+@{
+    ViewData["Title"] = "AboutList";
+    Layout = "~/Areas/Admin/Views/AdminDefault/Index.cshtml";
+}
+
+<div class="card-header">
+    <div class="card-title">Hakkımızda Sayfası</div>
+</div>
+<div class="card-body">
+    <div class="card-sub">
+        Hakkımızda ile ilgili işlemleri buradan yapabilirsiniz.
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Hakkımda Başlığı</th>
+                <th scope="col">Açıklaması</th>
+                <th scope="col">Video Url</th>
+                <th scope="col">Güncelle</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.AboutId</td>
+                    <td>@item.AboutTitle</td>
+                    <td>@item.AboutDescription</td>
+                    <td>@item.AboutVideoUrl</td>
+                    <td><a href="/Admin/About/UpdateAbout/@item.AboutId" class="btn btn-success">Güncelle</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

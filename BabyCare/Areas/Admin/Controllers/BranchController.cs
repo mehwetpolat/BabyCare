@@ -51,7 +51,7 @@ namespace BabyCare.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult UpdateBranch(Branch branch)
         {
-            var value = _context.Branches.Update(branch);
+            _context.Branches.Update(branch);
             _context.SaveChanges();
             return RedirectToAction("BranchList");
         }

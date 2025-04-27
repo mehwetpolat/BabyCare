@@ -1,0 +1,35 @@
+﻿@model Event
+@{
+    ViewData["Title"] = "CreateEvent";
+    Layout = "~/Areas/Admin/Views/AdminDefault/Index.cshtml";
+}
+
+<h1>Etkinlik Ekleme</h1>
+
+<form method="post">
+    <label>Etkinlik Adı</label>
+    <input type="text" asp-for="EventName" class="form-control" />
+    <span asp-validation-for="EventName" class="text-danger"></span>
+    <br />
+    <label>Açıklama</label>
+    <input type="text" asp-for="EventDescription" class="form-control" />
+    <span asp-validation-for="EventDescription" class="text-danger"></span>
+    <br />
+    <label>Şehir</label>
+    <input type="text" asp-for="EventCity" class="form-control" />
+    <span asp-validation-for="EventCity" class="text-danger"></span>
+    <br />
+    <label>Tarih (GÜN/AY)</label>
+    <input type="text" asp-for="EventDate" class="form-control" />
+    <span asp-validation-for="EventDate" class="text-danger"></span>
+    <br />
+    <label>Saat (XX.XX - XX.XX)</label>
+    <input type="text" asp-for="EventTime" class="form-control" />
+    <span asp-validation-for="EventTime" class="text-danger"></span>
+    <br />
+    <label>Resim Yolu</label>
+    <input type="text" asp-for="EventImageUrl" class="form-control" />
+    <span asp-validation-for="EventImageUrl" class="text-danger"></span>
+    <br />
+    <button class="btn btn-primary">Kaydet</button>
+</form>
