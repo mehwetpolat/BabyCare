@@ -58,6 +58,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXZlbnRcVXBkYXRlRXZlbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mehmet/Desktop/Projelerim/BabyCare/BabyCare/Areas/Admin/Views/Service/CreateService.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZVxDcmVhdGVTZXJ2aWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehmet/Desktop/Projelerim/BabyCare/BabyCare/Areas/Admin/Views/Service/ServiceList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZVxTZXJ2aWNlTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehmet/Desktop/Projelerim/BabyCare/BabyCare/Areas/Admin/Views/Service/UpdateService.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZVxVcGRhdGVTZXJ2aWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mehmet/Desktop/Projelerim/BabyCare/BabyCare/Areas/Admin/Views/Shared/Components/_AdminDefaultSidebarComponentPartial/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluRGVmYXVsdFNpZGViYXJDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -72,6 +84,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/mehmet/Desktop/Projelerim/BabyCare/BabyCare/Areas/Admin/Views/Team/UpdateTeam.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVhbVxVcGRhdGVUZWFtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehmet/Desktop/Projelerim/BabyCare/BabyCare/Areas/Admin/Views/Testimonial/CreateTestimonial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVzdGltb25pYWxcQ3JlYXRlVGVzdGltb25pYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehmet/Desktop/Projelerim/BabyCare/BabyCare/Areas/Admin/Views/Testimonial/TestimonialList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVzdGltb25pYWxcVGVzdGltb25pYWxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mehmet/Desktop/Projelerim/BabyCare/BabyCare/Areas/Admin/Views/Testimonial/UpdateTestimonial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVzdGltb25pYWxcVXBkYXRlVGVzdGltb25pYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mehmet/Desktop/Projelerim/BabyCare/BabyCare/Areas/Admin/Views/_ViewImports.cshtml]
